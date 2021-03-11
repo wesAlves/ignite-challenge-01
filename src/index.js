@@ -9,22 +9,6 @@ app.use(cors());
 app.use(express.json());
 
 const users = [];
-// const users = [
-//   {
-//     id: "f20dfd9e-662a-4e65-a9ad-edc53de3a4b0",
-//     name: "wes",
-//     username: "wes",
-//     todos: [
-//       {
-//         id: "3cea84a8-219d-4230-84df-9886c72b32fd",
-//         title: "Testes",
-//         done: false,
-//         deadline: "2021-03-11T14:41:30.800Z",
-//         created_at: "2021-03-11T15:02:20.340Z",
-//       },
-//     ],
-//   },
-// ];
 
 function checksExistsUserAccount(request, response, next) {
   const { username } = request.headers;
